@@ -1,0 +1,41 @@
+
+package ListaEncadeadaCircular;
+
+public class Elemento {
+   private String elemento;
+   private Elemento proximo;
+
+    public Elemento(String elemento, Elemento proximo) {
+        this.elemento = elemento;
+        this.proximo = proximo;
+    }
+
+    public Elemento() {
+    }
+
+    public Elemento(String elemento) {
+        this.elemento = elemento;
+    }
+
+    public String getElemento() {
+        return elemento;
+    }
+    
+    public void setElemento(String elemento) {
+        this.elemento = elemento;
+    }
+
+    public Elemento getProximo() {
+        return proximo;
+    }
+
+    public void setProximo(Elemento proximo) {
+        this.proximo = proximo;
+    }
+
+    @Override
+    public String toString() {
+        return "Elemento{" + "elemento=" + elemento + ", proximo=" + proximo + '}';
+    }
+   
+}
